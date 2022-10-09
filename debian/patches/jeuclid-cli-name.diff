@@ -1,0 +1,21 @@
+Index: jeuclid-3.1.8/jeuclid-cli/src/main/java/net/sourceforge/jeuclid/app/Mml2xxx.java
+===================================================================
+--- jeuclid-3.1.8.orig/jeuclid-cli/src/main/java/net/sourceforge/jeuclid/app/Mml2xxx.java	2010-01-25 09:59:29.000000000 +0100
++++ jeuclid-3.1.8/jeuclid-cli/src/main/java/net/sourceforge/jeuclid/app/Mml2xxx.java	2010-01-25 09:59:48.000000000 +0100
+@@ -228,14 +228,14 @@
+         final String lineSep = hf.getNewLine();
+         hf
+                 .printHelp(
+-                        "mml2xxx <source file(s)> <target file/directory> [options]",
++                        "jeuclid-cli <source file(s)> <target file/directory> [options]",
+                         "source is the path to the source file (MathML or ODF format)"
+                                 + lineSep
+                                 + "target is the path to the target file / directory"
+                                 + lineSep
+                                 + "If multiple source files are given, target must be a directory",
+                         options,
+-                        "Example: mml2xxx a.mml a.png -backgroundColor white");
++                        "Example: jeuclid-cli a.mml a.png -backgroundColor white");
+     }
+ 
+ }

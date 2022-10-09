@@ -1,0 +1,88 @@
+Source: jeuclid
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Sylvestre Ledru <sylvestre@debian.org>,
+           Torsten Werner <twerner@debian.org>
+Section: java
+Priority: optional
+Build-Depends: debhelper (>= 11~),
+               default-jdk,
+               ant,
+               junit,
+               libxmlgraphics-commons-java,
+               libcommons-logging-java,
+               libbatik-java (>= 1.10),
+               libcommons-cli-java,
+               libcommons-lang-java,
+               fop,
+               libcommons-io-java,
+               libjcip-annotations-java
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/science-team/jeuclid.git
+Vcs-Git: https://salsa.debian.org/science-team/jeuclid.git
+Homepage: http://jeuclid.sourceforge.net
+
+Package: libjeuclid-core-java
+Architecture: all
+Depends: libxmlgraphics-commons-java,
+         libcommons-logging-java,
+         libbatik-java (>= 1.10),
+         ${misc:Depends}
+Description: Complete MathML rendering solution (java classes)
+ JEuclid is a complete MathML rendering solution, consisting of:
+  * A MathViewer application
+  * Command line converters from MathML to other formats
+  * An ant task for automated conversion
+  * Display components for AWT and Swing
+  * A component for Apache Cocoon
+ .
+ This package contains the basic JEuclid rendering and document handling
+ classes.
+
+Package: jeuclid-mathviewer
+Architecture: all
+Depends: libjeuclid-core-java,
+         java-wrappers,
+         libcommons-io-java,
+         ${misc:Depends},
+         jeuclid-cli
+Description: Complete MathML rendering solution (Swing MathViewer)
+ JEuclid is a complete MathML rendering solution, consisting of:
+  * A MathViewer application
+  * Command line converters from MathML to other formats
+  * An ant task for automated conversion
+  * Display components for AWT and Swing
+  * A component for Apache Cocoon
+ .
+ This package contains the Swing MathViewer application.
+
+Package: jeuclid-cli
+Architecture: all
+Depends: libjeuclid-core-java,
+         libcommons-cli-java,
+         libcommons-lang-java,
+         java-wrappers,
+         ${misc:Depends}
+Description: Complete MathML rendering solution (command line tools)
+ JEuclid is a complete MathML rendering solution, consisting of:
+  * A MathViewer application
+  * Command line converters from MathML to other formats
+  * An ant task for automated conversion
+  * Display components for AWT and Swing
+  * A component for Apache Cocoon
+ .
+ This package contains the command line tools.
+
+Package: libjeuclid-fop-java
+Architecture: all
+Depends: libjeuclid-core-java,
+         fop,
+         ${misc:Depends}
+Description: Complete MathML rendering solution (fop plugin)
+ JEuclid is a complete MathML rendering solution, consisting of:
+  * A MathViewer application
+  * Command line converters from MathML to other formats
+  * An ant task for automated conversion
+  * Display components for AWT and Swing
+  * A component for Apache Cocoon
+ .
+ This package contains the fop plugin.

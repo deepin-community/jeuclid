@@ -1,0 +1,5 @@
+AppleJavaExtensions.patch
+MacOSX.patch
+jeuclid-cli-name.diff
+cast-issue.diff
+batik-compatibility.patch

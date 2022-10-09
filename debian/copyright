@@ -1,0 +1,93 @@
+This package was debianized by Sylvestre Ledru <sylvestre.ledru@inria.fr> on
+Mon Jul 14 00:59:27 CEST 2008. Some pieces of the build.xml file come
+Gentoo's package.
+
+It was downloaded from <http://jeuclid.sourceforge.net>
+
+Upstream Authors:
+
+    Max Berger
+    Erik Putrycz
+    Ernest Mishkin
+    Emmanuel Pietriga
+    PetrProchy
+
+Copyright: 2002-2008 JEuclid, http://jeuclid.sf.net
+
+License:
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+The full text of the Apache 2 license can be found in
+`/usr/share/common-licenses/Apache-2.0`
+
+The Debian packaging is (C) 2008, Sylvestre Ledru <sylvestre.ledru@inria.fr>
+and is licensed under the Apache 2.
+
+
+File: jeuclid-core/src/main/resources/mathml.2.0/mathml2.dtd
+
+Copyright:
+	1998-2003 W3C&#xae; (MIT, ERCIM, Keio), All Rights Reserved.
+
+License:
+     Permission to use, copy, modify and distribute the MathML 2.0 DTD and
+     its accompanying documentation for any purpose and without fee is
+     hereby granted in perpetuity, provided that the above copyright notice
+     and this paragraph appear in all copies.  The copyright holders make
+     no representation about the suitability of the DTD for any purpose.
+
+
+File: jeuclid-core/src/main/resources/mathml.2.0/mathml2-qname-1.mod
+
+Copyright: 1998-2000 World Wide Web Consortium
+   (Massachusetts Institute of Technology, Institut National de
+    Recherche en Informatique et en Automatique, Keio University).
+    All Rights Reserved.
+
+License:
+	Permission to use, copy, modify and distribute the XHTML 1.1 DTD and
+	its accompanying documentation for any purpose and without fee is
+	hereby granted in perpetuity, provided that the above copyright notice
+	and this paragraph appear in all copies.  The copyright holders make
+	no representation about the suitability of the DTD for any purpose.
+
+It is provided "as is" without expressed or implied warranty.
+
+File: jeuclid-core/src/main/resources/mathml.2.0/xhtml-math11-f.dtd
+
+Copyright: 2002 World Wide Web Consortium
+        (Massachusetts Institute of Technology, Institut National de
+         Recherche en Informatique et en Automatique, Keio University).
+         All Rights Reserved.
+
+License:
+     Permission to use, copy, modify and distribute this DTD and its
+     accompanying documentation for any purpose and without fee is hereby
+     granted in perpetuity, provided that the above copyright notice and
+     this paragraph appear in all copies.  The copyright holders make no
+     representation about the suitability of the DTD for any purpose.
+
+File: jeuclid-core/src/main/resources/openoffice.mathml.1.0.1/math.dtd
+
+Copyright: 1997-1999 World Wide Web Consortium
+        (Massachusetts Institute of Technology, Institut National de
+         Recherche en Informatique et en Automatique, Keio University).
+         All Rights Reserved.
+
+License:
+     Permission to use, copy, modify and distribute this DTD and its
+     accompanying documentation for any purpose and without fee is hereby
+     granted in perpetuity, provided that the above copyright notice and
+     this paragraph appear in all copies.  The copyright holders make no
+     representation about the suitability of the DTD for any purpose.

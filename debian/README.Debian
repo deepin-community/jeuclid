@@ -1,0 +1,13 @@
+jeuclid for Debian
+------------------
+
+mathviewer has a dependency over the library AppleJavaExtensions: 
+http://developer.apple.com/samplecode/AppleJavaExtensions/index.html
+Obviously, this dependency is useless for Debian. Therefore, I added empty
+class which are faking AppleJavaExtensions for the build time.
+Another solution could be to patch massively jeuclid-mathviewer.
+
+As a matter of consistency with the package name, mml2xxx script has been
+renamed to jeuclid-cli.
+
+ -- Sylvestre Ledru <sylvestre@debian.org>

@@ -1,0 +1,19 @@
+diff -ur jeuclid-3.1.9.orig/jeuclid-mathviewer/src/main/java/net/sourceforge/jeuclid/app/mathviewer/MathViewer.java jeuclid-3.1.9/jeuclid-mathviewer/src/main/java/net/sourceforge/jeuclid/app/mathviewer/MathViewer.java
+--- jeuclid-3.1.9.orig/jeuclid-mathviewer/src/main/java/net/sourceforge/jeuclid/app/mathviewer/MathViewer.java	2010-02-12 15:10:32.000000000 +0100
++++ jeuclid-3.1.9/jeuclid-mathviewer/src/main/java/net/sourceforge/jeuclid/app/mathviewer/MathViewer.java	2011-11-19 14:21:49.939037763 +0100
+@@ -86,13 +86,13 @@
+             public void run() {
+                 final MainFrame mainFrame = new MainFrame();
+                 mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+-                if (MathViewer.OSX) {
++/*                if (MathViewer.OSX) {
+                     final Application a = Application.getApplication();
+                     a.setEnabledAboutMenu(true);
+                     a.setEnabledPreferencesMenu(true);
+                     a.addApplicationListener(new MainFrameAppListener(
+                             mainFrame));
+-                }
++                }*/
+                 if (MathViewer.source != null) {
+                     mainFrame.loadFile(MathViewer.source);
+                 }

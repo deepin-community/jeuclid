@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@ --buildsystem=ant
+
+override_dh_auto_build:
+	dh_auto_build -- -f debian/build.xml compile-core compile-mathviewer compile-cli compile-fop
+
+override_dh_auto_install:
+	install -m 644 -D target/jeuclid-core.jar debian/libjeuclid-core-java/usr/share/java/jeuclid-core-${DEB_VERSION_UPSTREAM}.jar
+	ln -s jeuclid-core-${DEB_VERSION_UPSTREAM}.jar debian/libjeuclid-core-java/usr/share/java/jeuclid-core.jar
+
+	install -m 644 -D target/jeuclid-mathviewer.jar debian/jeuclid-mathviewer/usr/share/java/jeuclid-mathviewer-${DEB_VERSION_UPSTREAM}.jar
+	ln -s jeuclid-mathviewer-${DEB_VERSION_UPSTREAM}.jar debian/jeuclid-mathviewer/usr/share/java/jeuclid-mathviewer.jar
+	cp debian/jeuclid-mathviewer.sh debian/jeuclid-mathviewer/usr/bin/jeuclid-mathviewer
+
+	install -m 644 -D target/jeuclid-cli.jar debian/jeuclid-cli/usr/share/java/jeuclid-cli-${DEB_VERSION_UPSTREAM}.jar
+	ln -s jeuclid-cli-${DEB_VERSION_UPSTREAM}.jar debian/jeuclid-cli/usr/share/java/jeuclid-cli.jar
+	cp debian/jeuclid-cli.sh debian/jeuclid-cli/usr/bin/jeuclid-cli
+
+	install -m 644 -D target/jeuclid-fop.jar debian/libjeuclid-fop-java/usr/share/java/jeuclid-fop-${DEB_VERSION_UPSTREAM}.jar
+	ln -s jeuclid-fop-${DEB_VERSION_UPSTREAM}.jar debian/libjeuclid-fop-java/usr/share/java/jeuclid-fop.jar
+
+override_dh_auto_clean:
+	dh_auto_clean -- -f debian/build.xml

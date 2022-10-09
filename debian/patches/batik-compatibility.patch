@@ -1,0 +1,14 @@
+Description: Fixes the compatibility with Batik 1.10
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: no
+--- a/jeuclid-core/src/main/java/net/sourceforge/jeuclid/elements/presentation/token/Mo.java
++++ b/jeuclid-core/src/main/java/net/sourceforge/jeuclid/elements/presentation/token/Mo.java
+@@ -47,7 +47,7 @@
+ import org.apache.batik.dom.events.DOMCustomEvent;
+ import org.w3c.dom.Attr;
+ import org.w3c.dom.Node;
+-import org.w3c.dom.events.CustomEvent;
++import org.apache.batik.w3c.dom.events.CustomEvent;
+ import org.w3c.dom.events.Event;
+ import org.w3c.dom.events.EventListener;
+ import org.w3c.dom.events.EventTarget;
